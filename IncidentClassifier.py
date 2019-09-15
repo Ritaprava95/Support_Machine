@@ -86,8 +86,8 @@ def model(vocab_size, padded_train_X, train_y, padded_test_X, test_y, embedding_
     
     
     print(train.history.keys())
-    plt.plot(train.history(['acc']))
-    plt.plot(train.history(['val_acc']))
+    plt.plot(train.history['acc'])
+    plt.plot(train.history['val_acc'])
     plt.title('model accuracy')
     plt.ylabel('accuracy')
     plt.xlabel('epoch')
